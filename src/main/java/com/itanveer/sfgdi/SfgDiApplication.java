@@ -1,9 +1,6 @@
 package com.itanveer.sfgdi;
 
-import com.itanveer.sfgdi.controller.ConstructorInjectedController;
-import com.itanveer.sfgdi.controller.MyController;
-import com.itanveer.sfgdi.controller.PropertyInjectedController;
-import com.itanveer.sfgdi.controller.SetterInjectedController;
+import com.itanveer.sfgdi.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +12,12 @@ public class SfgDiApplication {
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
 		MyController myController = (MyController) ctx.getBean("myController");
+
+		System.out.println("------ Profile Test -------");
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
+
+
 		System.out.println("-------- Primary Bean");
 		System.out.println(myController.sayHello());
 
