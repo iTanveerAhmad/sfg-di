@@ -1,6 +1,6 @@
 package com.itanveer.sfgdi.controller;
 
-import com.itanveer.sfgdi.service.PetService;
+import com.springframework.pet.PetService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 

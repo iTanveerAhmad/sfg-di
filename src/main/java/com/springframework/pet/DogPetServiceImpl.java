@@ -1,6 +1,5 @@
-package com.itanveer.sfgdi.service;
+package com.springframework.pet;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

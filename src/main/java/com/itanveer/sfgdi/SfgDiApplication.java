@@ -4,7 +4,9 @@ import com.itanveer.sfgdi.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan({"com.itanveer.sfgdi", "com.springframework.pet"})
 @SpringBootApplication
 public class SfgDiApplication {
 

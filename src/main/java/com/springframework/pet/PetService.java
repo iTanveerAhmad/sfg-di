@@ -1,4 +1,4 @@
-package com.itanveer.sfgdi.service;
+package com.springframework.pet;
 
 public interface PetService {
 
